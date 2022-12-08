@@ -1,0 +1,8 @@
+.crossOut {
+    text-decoration: line-through;
+    background-color: #d22b1f;
+
+}
+.cursor{
+    cursor: pointer;
+}
