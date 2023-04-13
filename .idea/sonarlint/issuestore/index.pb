@@ -41,8 +41,6 @@ E
 backend/.env,f\3\f30451335edfb80e231f658d0defc83bb7e4c3a7
 J
 frontend/package-lock.json,7\5\75b3b81cff849b08343553e269c3327a04ab22e0
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 E
 frontend/package.json,3\7\37083060967a471c011a16651e22bdc2ade41759
 O
@@ -97,3 +95,5 @@ V
 &frontend/src/components/CreateTodo.jsx,d\0\d05383d206bce522fbb29fcbf35f9d37b052eeb4
 T
 $frontend/src/components/CardList.jsx,0\e\0ef4e7aeba91ef1bf51647ac1e28e4522c0fcf4f
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
