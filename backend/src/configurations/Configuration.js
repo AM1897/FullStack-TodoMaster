@@ -6,9 +6,8 @@ dotenv.config()
 
 const port = process.env.PORT
 const environment = process.env.NODE_ENV
-const mongodb_url = process.env.DATABASE_URL
+const mongodb_url = "mongodb://127.0.0.1:27017/"
 const dbName = process.env.MONGODB_DB_NAME
-
 
 function isServerInDevelopmentMode() {
     const denEnv = 'development'
@@ -27,7 +26,7 @@ const connectToPort = (app) => {
 }
 
 const connectToDatabase = async (app) => {
-    const uri = mongodb_url + dbName
+    const uri = mongodb_url + dbName + "?retryWrites=true&w=majority";
     try {
         await mongoose.connect(uri)
         Logger.info('LYCKAD ANSLUTNING TILL DATABASEN!')
@@ -41,4 +40,3 @@ export default {
     connectToDatabase,
     connectToPort
 }
-
