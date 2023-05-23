@@ -20,7 +20,7 @@ const GetSingleDataById = () => {
 
     return (
         <>
-            <div>
+            <div class="column" id="center-column">
                 ID: <input type="text"
                            value={id}
                            onChange={event => setId(event.target.value)}/>

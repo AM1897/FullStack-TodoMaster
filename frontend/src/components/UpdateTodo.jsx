@@ -23,7 +23,9 @@ const UpdateTodo = () => {
             .catch(error => console.log(error))
     }
     return (
-        <>  <p>
+        <>  
+        <div class="column" id="center-column">
+            <p>
             ID: <input type="text" value={id} onChange={e => setId(e.target.value)}/>
             Namn:<input type="text" value={name} onChange={e => setName(e.target.value)}/>
             Todo: <input type="text" value={todo} onChange={e => setTodo(e.target.value)}/>
@@ -33,7 +35,8 @@ const UpdateTodo = () => {
             {data.length > 0 && data[0].message
                 ? <p>{data[0].message}</p>
                 : <CardList todo={data}/>}
-        </p>
+            </p>
+        </div>
         </>
     )
 }

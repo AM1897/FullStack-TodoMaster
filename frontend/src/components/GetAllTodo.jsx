@@ -14,11 +14,13 @@ const GetAllTodo = () => {
     }
     return (
         <>
+        <div class="column" id="right-column">
             <p>Todo Listan:
                 <button onClick={fetchDataFromExternalApi}>Öppna</button>
                 <button onClick={() => setData([])}> Stänga</button>
                 <CardList todo={data}/>
             </p>
+        </div>
         </>
     )
 }

@@ -3,3 +3,15 @@ body {
   margin: 50px;
   text-align: center;
 }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.columnItem1 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}

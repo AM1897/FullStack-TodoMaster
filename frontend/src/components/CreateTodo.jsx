@@ -20,6 +20,7 @@ const CreateTodo = () => {
     }
     return (
         <>
+        <div class="column" id="center-column">
             Namn: <input type="text"
                          value={name}
                          onChange={e => setName(e.target.value)}/>
@@ -33,7 +34,7 @@ const CreateTodo = () => {
                                    todo={data.todo}
                                    _id={data._id}/>
                 : ''}
-
+        </div>
         </>
     )
 }
