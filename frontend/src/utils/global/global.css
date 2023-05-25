@@ -1,17 +1,9 @@
 body {
-  background: linear-gradient(to left, rgba(222, 184, 135,1) 0%,  rgba(222, 184, 135,1) 100%);
-  margin: 50px;
+  background: #1F2937;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #fff;
   text-align: center;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.columnItem1 {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
 }

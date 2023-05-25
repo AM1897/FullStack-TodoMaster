@@ -1,5 +1,5 @@
 import TodosService from '../utils/api/service/TodosService'
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import CardList from "./CardList";
 
 const GetAllTodo = () => {
@@ -12,16 +12,20 @@ const GetAllTodo = () => {
             })
             .catch(error => console.log(error))
     }
+
+    
+    useEffect(() => {
+        fetchDataFromExternalApi();
+    }, [data]);
+
     return (
         <>
-        <div class="column" id="right-column">
-            <p>Todo Listan:
-                <button onClick={fetchDataFromExternalApi}>Öppna</button>
-                <button onClick={() => setData([])}> Stänga</button>
-                <CardList todo={data}/>
-            </p>
-        </div>
+            <div class="column" id="right-column">
+                <p>
+                    <CardList todo={data}/>
+                </p>
+            </div>
         </>
     )
 }
-export default GetAllTodo
+export default GetAllTodo;

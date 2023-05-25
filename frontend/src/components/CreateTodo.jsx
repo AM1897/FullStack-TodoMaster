@@ -30,10 +30,6 @@ const CreateTodo = () => {
             <button onClick={sendDataToApi}>
                 Skapa ny användare
             </button>
-            {data.name ? <Card name={data.name}
-                                   todo={data.todo}
-                                   _id={data._id}/>
-                : ''}
         </div>
         </>
     )

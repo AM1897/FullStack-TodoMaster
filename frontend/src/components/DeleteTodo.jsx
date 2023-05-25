@@ -17,14 +17,7 @@ const DeleteTodo = () => {
     }
     return (
         <>
-        <div class="column" id="center-column">
 
-            ID: <input data-testid='dataInput' type="text"
-                       value={id}
-                       onChange={event => setId(event.target.value)}/>
-            <button data-testid='Remove Button' onClick={sendDataToApi}>Ta bort</button>
-            <p>{data}</p>
-        </div>
         </>
     )
 }

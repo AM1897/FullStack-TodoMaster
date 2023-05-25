@@ -20,17 +20,7 @@ const GetSingleDataById = () => {
 
     return (
         <>
-            <div class="column" id="center-column">
-                ID: <input type="text"
-                           value={id}
-                           onChange={event => setId(event.target.value)}/>
-                <button onClick={() => setId([])}>Ta bort</button>
-                <button onClick={sendDataToApi}>Hämta ID</button>
-                {singleTodo.length > 0 && singleTodo[0].message
-                    ? <p>{singleTodo[0].message}</p>
-                    : <CardList todo={singleTodo}/> }
 
-            </div>
         </>
     )
 }

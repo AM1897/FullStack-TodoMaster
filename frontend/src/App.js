@@ -5,6 +5,7 @@ import CreateTodo from "./components/CreateTodo";
 import UpdateTodo from "./components/UpdateTodo";
 import DeleteTodo from "./components/DeleteTodo";
 import GetSingelDataByName from "./components/GetSingleDataById";
+import global from "./utils/global/global.css";
 
 
 
