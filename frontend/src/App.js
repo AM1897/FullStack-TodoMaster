@@ -1,26 +1,21 @@
-import './utils/global/global.css'
-import Alive from "./components/Alive"
-import GetAllTodo from './components/GetAllTodo'
-import CreateTodo from "./components/CreateTodo";
-import UpdateTodo from "./components/UpdateTodo";
-import DeleteTodo from "./components/DeleteTodo";
-import GetSingelDataByName from "./components/GetSingleDataById";
-import global from "./utils/global/global.css";
-
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/Auth/Login/Login.jsx";
+import Register from "./components/Auth/Register/Register.jsx";
+import TodoPage from './components/Todo/TodoPage/TodoPage.jsx';
+import { AuthProvider } from './contexts/AuthContext.js';
 
 function App() {
     return (
-        <>
-            <h1>TODO</h1>
-            <Alive/>
-            <GetAllTodo/>
-            <CreateTodo/>
-            <UpdateTodo/>
-            <DeleteTodo/>
-            <GetSingelDataByName/>
-        </>
-    )
+        <AuthProvider>
+            <Router>
+            <Routes>
+                <Route path="" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/todopage" element={<TodoPage />} />
+            </Routes>
+        </Router>
+        </AuthProvider>
+    );
 }
 
 export default App;

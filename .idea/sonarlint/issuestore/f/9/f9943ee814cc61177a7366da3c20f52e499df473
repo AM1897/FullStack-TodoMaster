@@ -1,0 +1,12 @@
+
+Pjavascript:S1128"(Remove this unused import of 'CardList'.(ςςλϊÿÿÿÿ8±ζη¬‹1
+]javascript:S1481"5Remove the declaration of the unused 'data' variable.(Ν–ΆΛÿÿÿÿÿ8±ζη¬‹1
+Zjavascript:S1854"2Remove this useless assignment to variable "data".(Ν–ΆΛÿÿÿÿÿ8±ζη¬‹1
+[javascript:S1481"8Remove the declaration of the unused 'setName' variable.(τΚ8±ζη¬‹1
+Xjavascript:S1854"5Remove this useless assignment to variable "setName".(τΚ8±ζη¬‹1
+^javascript:S1481"6Remove the declaration of the unused 'setId' variable.(ψήΖζϊÿÿÿÿ8±ζη¬‹1
+[javascript:S1854"3Remove this useless assignment to variable "setId".(ψήΖζϊÿÿÿÿ8²ζη¬‹1
+[javascript:S1481	"8Remove the declaration of the unused 'setTodo' variable.(Ύν8²ζη¬‹1
+Xjavascript:S1854	"5Remove this useless assignment to variable "setTodo".(Ύν8²ζη¬‹1
+ajavascript:S1481">Remove the declaration of the unused 'sendDataToApi' variable.(ΘκύΞ8²ζη¬‹1
+^javascript:S1854";Remove this useless assignment to variable "sendDataToApi".(ΘκύΞ8²ζη¬‹1
