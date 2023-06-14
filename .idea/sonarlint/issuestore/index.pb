@@ -75,8 +75,6 @@ E
 backend/src/server.js,e\3\e39e226d76793263ab49e3d6b7a0ade0b9d29cdf
 <
 backend/.env,f\3\f30451335edfb80e231f658d0defc83bb7e4c3a7
-b
-2frontend/src/components/Auth/Register/Register.jsx,5\9\5989bfafecf02df9d551173560ce2ca019d0fd96
 C
 frontend/src/App.js,d\6\d63b8ace488b6134c279ccc0cc109223d4d79c20
 O
@@ -89,19 +87,17 @@ D
 backend/package.json,2\d\2d67691333633e849af94af966942f0c1b3151c6
 ^
 .frontend/src/utils/api/service/TodosService.js,e\6\e6f3b150e29b121d4e544507a5e41c5ee5841b2f
-]
--frontend/src/utils/api/service/authService.js,f\9\f937ee9c1cbec1cd5987b9e0092aea80c0a12766
-Z
-*frontend/src/components/Todo/Card/Card.jsx,1\d\1dac240ba142a6488edaf4f5c9977d6137da6d4a
 b
-2frontend/src/components/Todo/CardList/CardList.jsx,f\5\f500251d05cba66d32d849bdc177240e69db0f46
+2frontend/src/components/Todo/TodoPage/TodoPage.jsx,e\3\e37632cffecb48d99065a7b7dd81a6c68cace020
 f
 6frontend/src/components/Todo/UpdateTodo/UpdateTodo.jsx,f\9\f9943ee814cc61177a7366da3c20f52e499df473
 \
 ,frontend/src/components/Auth/Login/Login.jsx,3\e\3ebe93405ad12ed7bc393372ca987d2027a80b54
-T
-$frontend/src/contexts/AuthContext.js,1\c\1c9e99ea7634a93c3ee0c4ecee492d084b0b069e
 f
 6frontend/src/components/Todo/CreateTodo/CreateTodo.jsx,e\2\e2fbbef58908130533d8bfdf96b063d004ed2737
 b
-2frontend/src/components/Todo/TodoPage/TodoPage.jsx,e\3\e37632cffecb48d99065a7b7dd81a6c68cace020
+2frontend/src/components/Todo/CardList/CardList.jsx,f\5\f500251d05cba66d32d849bdc177240e69db0f46
+Z
+*frontend/src/components/Todo/Card/Card.jsx,1\d\1dac240ba142a6488edaf4f5c9977d6137da6d4a
+T
+$frontend/src/contexts/AuthContext.js,1\c\1c9e99ea7634a93c3ee0c4ecee492d084b0b069e

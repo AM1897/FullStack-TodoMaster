@@ -1,40 +1,34 @@
-import { useState } from 'react';
-import { useNavigate } from "react-router-dom";
-import authService from '../../../utils/api/service/authService';
+import React, { useContext, useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../../contexts/AuthContext.js';
+import AuthService from '../../../utils/api/service/authService';
 
-const Register = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const navigate = useNavigate();
+function RegisterPage() {
+    const navigate = useNavigate();
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
 
-  const handleRegister = async (e) => {
-    e.preventDefault();
-    const data = await authService.register({ username, password });
-
-    if (data.message === 'User created successfully') {
-      navigate("/"); // Redirect the user to the login page after successful registration
-    } else {
-      console.error('Error:', data.error);
-      // Display an error message to the user
-    }
-  };
+    const handleRegister = async () => {
+        const userCredentials = {
+            username: username,
+            password: password,
+        };
+        try {
+            await AuthService.register(userCredentials); // Här har vi ändrat från `registerUser` till `register`
+            navigate('/'); // Navigera till inloggningssidan
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
     return (
         <div>
-            <h2>Register</h2>
-            <form onSubmit={handleRegister}>
-                <label>
-                    Username:
-                    <input type="text" value={username} onChange={e => setUsername(e.target.value)} />
-                </label>
-                <label>
-                    Password:
-                    <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
-                </label>
-                <button type="submit">Register</button>
-            </form>
+            <h1>Registrera dig</h1>
+            <input type="text" placeholder="Användarnamn" onChange={(e) => setUsername(e.target.value)} />
+            <input type="password" placeholder="Lösenord" onChange={(e) => setPassword(e.target.value)} />
+            <button onClick={handleRegister}>Registrera</button>
         </div>
     );
-};
+}
 
-export default Register;
+export default RegisterPage;
