@@ -45,8 +45,6 @@ H
 Insomnia_2022-04-16.yaml,2\3\233f4090c1110a8b07939dbd8c9dd1b396e456a8
 E
 frontend/src/index.js,0\9\09a4e53ab0e5e7637fd01136f19a9bb570e1ef2d
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 ^
 .backend/src/configurations/ApplyMiddlewares.js,2\c\2c7a7e1404a3933b37d8148778c2ece395a99785
 [
@@ -77,8 +75,6 @@ E
 backend/.env,f\3\f30451335edfb80e231f658d0defc83bb7e4c3a7
 C
 frontend/src/App.js,d\6\d63b8ace488b6134c279ccc0cc109223d4d79c20
-O
-frontend/src/utils/api/MyAPI.js,b\a\ba879b4bf56be0d324a2cbaf2da54aee98b16e22
 ^
 .frontend/src/utils/api/service/MyAPIService.js,c\7\c73d7520d5be0153a3aaff38b5782196d8d1b916
 V

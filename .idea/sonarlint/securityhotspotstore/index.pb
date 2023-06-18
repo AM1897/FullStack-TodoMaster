@@ -1,6 +1,4 @@
 
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 ^
 .backend/src/configurations/ApplyMiddlewares.js,2\c\2c7a7e1404a3933b37d8148778c2ece395a99785
 [
@@ -31,8 +29,6 @@ Y
 backend/.env,f\3\f30451335edfb80e231f658d0defc83bb7e4c3a7
 C
 frontend/src/App.js,d\6\d63b8ace488b6134c279ccc0cc109223d4d79c20
-O
-frontend/src/utils/api/MyAPI.js,b\a\ba879b4bf56be0d324a2cbaf2da54aee98b16e22
 ^
 .frontend/src/utils/api/service/MyAPIService.js,c\7\c73d7520d5be0153a3aaff38b5782196d8d1b916
 V
