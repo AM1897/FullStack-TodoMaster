@@ -8,28 +8,37 @@ const createTodo = async (req, res) => {
     Logger.http(req.body)
 
     const {todo, name} = req.body
+
     if (todo && name) {
-        const newName = {
+        const newTodo = {
             name: name,
             todo: todo,
-            todoDone: false
+            todoDone: false,
+            user: req.user._id
         }
-        Logger.debug(newName)
+
+        Logger.debug(newTodo)
 
         try {
-            const todo = new TodoModel(newName)
+            const todo = new TodoModel(newTodo)
             const response = await todo.save()
             Logger.debug(response)
             res.status(StatusCode.CREATE).send(response)
         } catch (error) {
             Logger.error(error)
-            res.status(StatusCode.BAD_REQUEST).send({error: error`Det gick inte att skapa en Todo`})
+            res.status(StatusCode.BAD_REQUEST).send({error: 'Det gick inte att skapa en Todo'})
         }
     } else {
-        Logger.error(error)
-        res.status(StatusCode.NO_CONTENT).send('No body found')
+        try {
+            Logger.error('No body found')
+            res.status(StatusCode.NO_CONTENT).send('No body found')
+        } catch (error) {
+            Logger.error(error)
+            res.status(StatusCode.BAD_REQUEST).send({error: 'Det gick inte att skapa en Todo'})
+        }
     }
 }
+
 
 const getAllTodos = (req, res) => {
 

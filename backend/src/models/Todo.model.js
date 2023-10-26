@@ -5,13 +5,11 @@ dotenv.config()
 const dbCollection = process.env.MONGODB_COLLECTION
 
 const TodoSchema = new mongoose.Schema({
-        name: String,
-        todo: String,
-        todoDone: false
-    },
-
-    {timestamps: true}
-)
+    name: String,
+    todo: String,
+    todoDone: { type: Boolean, default: false },
+    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
+}, {timestamps: true})
 
 const TodoModel = new mongoose.model(dbCollection, TodoSchema)
 

@@ -7,7 +7,7 @@ import Configuration from './configurations/Configuration.js'
 import TodoRoutes from './routes/Todo.routes.js'
 import ApplyMiddlewares from './configurations/ApplyMiddlewares.js'
 import AliveRoute from './routes/Alive.route.js'
-import authRoutes from './routes/authRoutes.js'  // <-- import here
+import authRoutes from './routes/authRoutes.js'
 import cors from 'cors'
 
 dotenv.config()
@@ -20,7 +20,7 @@ app.use(morgan('common'))
 app.use(express.json())
 app.use(cors())
 
-app.use('/auth', authRoutes) 
+app.use('/auth', authRoutes)
 AliveRoute.AliveRoute(app)
 TodoRoutes.routes(app)
 app.use(Middlewares.notFound)
