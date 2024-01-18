@@ -39,8 +39,6 @@ D
 backend/package.json,2\d\2d67691333633e849af94af966942f0c1b3151c6
 c
 3frontend/src/components/__test__/createUser.test.js,9\b\9b6dc5646908579c1e4f7a791432fe2a26f00728
-^
-.frontend/src/utils/api/service/MyAPIService.js,c\7\c73d7520d5be0153a3aaff38b5782196d8d1b916
 H
 Insomnia_2022-04-16.json,8\3\835bc3b8ff7747e08c8ad2f9cdad90c9319558e9
 H
@@ -58,10 +56,6 @@ A
 J
 frontend/package-lock.json,7\5\75b3b81cff849b08343553e269c3327a04ab22e0
 Q
-!backend/src/routes/Alive.route.js,3\1\31a2ac6198cbcae2ecdca50e06fcc06857ad124e
-P
- backend/src/routes/authRoutes.js,6\5\65b21bbdee1d45187ec8069aa8beb93f0d2d4324
-Q
 !backend/src/routes/Todo.routes.js,b\d\bd62a8f1041c61acc1fa43ea50b064b8d2b64cb5
 J
 backend/src/models/User.js,9\f\9f2dc938445c02edf0a9b2bd7a045676e1910cf4
@@ -73,20 +67,8 @@ Z
 *backend/src/controllers/AliveController.js,7\4\7465e95ceae56edb06dcf7c286d355a053c08ebd
 ^
 .backend/src/configurations/ApplyMiddlewares.js,2\c\2c7a7e1404a3933b37d8148778c2ece395a99785
-O
-frontend/src/utils/api/MyAPI.js,b\a\ba879b4bf56be0d324a2cbaf2da54aee98b16e22
-]
--frontend/src/utils/api/service/TodoService.js,2\7\27f213dbe6f66e04029d41a306ccd74f56134dba
-W
-'frontend/src/components/login/Login.jsx,8\6\86fcdc936790993e130d84664d7c18722b0632bd
-C
-frontend/src/App.js,d\6\d63b8ace488b6134c279ccc0cc109223d4d79c20
 S
 #frontend/src/context/AuthContext.js,1\4\14476b9fd9d9276d437fadfb61395ebc84044b01
-]
--frontend/src/components/todoPage/TodoPage.jsx,b\1\b12f6cca12089bd9e93d58bcec85bff2fcb0dc42
-]
--frontend/src/components/register/Register.jsx,6\c\6cfe4fd009914ae8a485835cf5af80a0fdcdc3a4
 E
 backend/src/server.js,e\3\e39e226d76793263ab49e3d6b7a0ade0b9d29cdf
 P
@@ -95,3 +77,21 @@ P
 +backend/src/configurations/Configuration.js,4\0\40a8c44e260efa50ae0ec2dc89b4123e2c0e45e5
 Z
 *backend/src/controllers/Todo.controller.js,4\e\4e1b55bc3704b98da84587794e1de2b45c0117be
+Q
+!backend/src/routes/Alive.route.js,3\1\31a2ac6198cbcae2ecdca50e06fcc06857ad124e
+P
+ backend/src/routes/authRoutes.js,6\5\65b21bbdee1d45187ec8069aa8beb93f0d2d4324
+^
+.frontend/src/utils/api/service/MyAPIService.js,c\7\c73d7520d5be0153a3aaff38b5782196d8d1b916
+]
+-frontend/src/utils/api/service/TodoService.js,2\7\27f213dbe6f66e04029d41a306ccd74f56134dba
+O
+frontend/src/utils/api/MyAPI.js,b\a\ba879b4bf56be0d324a2cbaf2da54aee98b16e22
+C
+frontend/src/App.js,d\6\d63b8ace488b6134c279ccc0cc109223d4d79c20
+W
+'frontend/src/components/login/Login.jsx,8\6\86fcdc936790993e130d84664d7c18722b0632bd
+]
+-frontend/src/components/register/Register.jsx,6\c\6cfe4fd009914ae8a485835cf5af80a0fdcdc3a4
+]
+-frontend/src/components/todoPage/TodoPage.jsx,b\1\b12f6cca12089bd9e93d58bcec85bff2fcb0dc42
